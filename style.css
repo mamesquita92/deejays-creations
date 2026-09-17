@@ -688,3 +688,41 @@ nav a {
         height: auto;
     }
 }
+
+    .tshirt-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .tshirt-grid img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    @media screen and (max-width: 768px) {
+    .shirt-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+
+    .shirt-grid img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+}
+
+.gallery-grid img {
+    height: 650px;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-grid img,
+    .gallery-grid img:first-child {
+        height: 600px;
+    }
+}

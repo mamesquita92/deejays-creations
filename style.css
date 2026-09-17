@@ -726,3 +726,13 @@ nav a {
         height: 600px;
     }
 }
+
+.gallery-grid img.wide-cake {
+    object-fit: contain;
+    background-color: white;
+}
+
+.gallery-grid img:first-child {
+    grid-row: auto;
+    height: 650px;
+}

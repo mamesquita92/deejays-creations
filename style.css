@@ -736,3 +736,146 @@ nav a {
     grid-row: auto;
     height: 650px;
 }
+
+/* THANKSGIVING PAGE */
+
+/* THANKSGIVING PAGE */
+
+.thanksgiving-page {
+    background: linear-gradient(135deg, #fff9fc, #f1e2f7);
+    color: #3d1637;
+}
+
+.thanksgiving-intro {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px 45px;
+    text-align: center;
+}
+
+.thanksgiving-intro h1 {
+    margin: 10px 0 20px;
+    color: #4a123d;
+    font-family: Georgia, serif;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+}
+
+.thanksgiving-intro p:not(.small-title) {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    color: #755e6f;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.thanksgiving-menu-section {
+    padding: 35px 20px 70px;
+    text-align: center;
+}
+
+.thanksgiving-menu-section h2,
+.thanksgiving-gallery h2,
+.thanksgiving-order h2 {
+    margin-bottom: 30px;
+    color: #4a123d;
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+.thanksgiving-menu-image {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+    border: 8px solid white;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(88, 35, 77, 0.15);
+}
+
+.thanksgiving-gallery {
+    padding: 70px 5%;
+    background: #fff8fc;
+    text-align: center;
+}
+
+.thanksgiving-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1250px;
+    margin: 35px auto 0;
+}
+
+.thanksgiving-gallery-grid figure {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #efd8e9;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 15px 35px rgba(88, 35, 77, 0.12);
+}
+
+.thanksgiving-gallery-grid img {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.thanksgiving-gallery-grid figcaption {
+    padding: 16px 12px;
+    color: #a747a8;
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.thanksgiving-order {
+    padding: 70px 20px 85px;
+    background: linear-gradient(135deg, #f8e8f4, #eee2f8);
+    text-align: center;
+}
+
+.thanksgiving-order p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #755e6f;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .thanksgiving-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .thanksgiving-gallery-grid img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .thanksgiving-intro {
+        padding-top: 45px;
+    }
+
+    .thanksgiving-menu-section {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .thanksgiving-menu-image {
+        border-width: 4px;
+        border-radius: 15px;
+    }
+
+    .thanksgiving-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .thanksgiving-gallery-grid img {
+        height: 410px;
+    }
+}
